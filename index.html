@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container1{
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+            background-color: aquamarine;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .item{
+            background-color: aqua;
+            border-radius: 10px;
+            border: 1px solid red;
+            width: 200px;
+            height: 100px;
+        }
+        .calender {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            column-gap: 10px;
+            row-gap: 10px;
+            /*gap: 10px;*/
+        }
+
+        .day {
+            background-color: aqua;
+            border-radius: 10px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 1096px) {
+            .container1{
+                flex-direction: column;
+            }
+
+            .calender {
+                grid-template-columns: repeat(1, 1fr);
+                /*grid-template-rows: repeat(7, 1fr);*/
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur et voluptatem neque in vero error eos,
+            similique rem? Error quaerat vitae eveniet quibusdam dolorum harum nisi saepe quisquam, praesentium dolores
+            similique. Voluptatum nam sequi ad minima voluptates laborum veniam saepe.
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur et voluptatem neque in vero error eos,
+            similique rem? Error quaerat vitae eveniet quibusdam dolorum harum nisi saepe quisquam, praesentium dolores
+            similique. Voluptatum nam sequi ad minima voluptates laborum veniam saepe.
+        </div>
+    </div>
+    <div class="container2">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+    </div>
+    <div class="calender">
+        <div class="day">s</div>
+        <div class="day">m</div>
+        <div class="day">t</div>
+        <div class="day">w</div>
+        <div class="day">t</div>
+        <div class="day">f</div>
+        <div class="day">s</div>
+        <div class="day">day-1</div>
+        <div class="day">day-2</div>
+        <div class="day">day-3</div>
+        <div class="day">day-4</div>
+        <div class="day">day-5</div>
+        <div class="day">day-6</div>
+        <div class="day">day-7</div>
+        <div class="day">day-8</div>
+        <div class="day">day-9</div>
+        <div class="day">day-10</div>
+        <div class="day">day-11</div>
+        <div class="day">day-12</div>
+        <div class="day">day-13</div>
+        <div class="day">day-14</div>
+        <div class="day">day-15</div>
+        <div class="day">day-16</div>
+        <div class="day">day-17</div>
+        <div class="day">day-18</div>
+        <div class="day">day-19</div>
+        <div class="day">day-20</div>
+        <div class="day">day-21</div>
+        <div class="day">day-22</div>
+        <div class="day">day-23</div>
+        <div class="day">day-24</div>
+        <div class="day">day-25</div>
+        <div class="day">day-26</div>
+        <div class="day">day-27</div>
+        <div class="day">day-28</div>
+        <div class="day">day-29</div>
+        <div class="day">day-30</div>
+    </div>
+</body>
+
+</html>
